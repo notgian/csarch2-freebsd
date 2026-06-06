@@ -32,4 +32,11 @@ Following the Tech Stack Plan, our Proposed Interactive Element is an Architectu
 - Styling: Tailwind CSS will be utilized for styling of the venn diagram, positioning, animations and other design elements that will be utilized in the development of the overall virtual exhibit.
 
 ### Tentative Style Guide Snapshot
-`Will add image image next commit`
+
+![1](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/1.png)
+![2](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/2.png)
+![3](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/3.png)
+![4](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/4.png)
+![5](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/5.png)
+![6](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/6.png)
+
