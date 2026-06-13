@@ -45,6 +45,6 @@ Tailwind CSS will be utilized for styling of the overall interactive terminal, p
 ![2](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/2.png)
 ![3](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/3.png)
 ![4](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/4.png)
-![5](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/5.png)
+![5](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/5-new.png)
 ![6](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/6.png)
 
