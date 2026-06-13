@@ -11,10 +11,13 @@ This section will discuss FreeBSD, touching on both FreeBSD as a piece of softwa
 This section will go over a few of the features of FreeBSD and detail how they work, that these features do, and what these features can do. This includes, but is not limited to: ZFS, which is the filesystem that FreeBSD used; jails, which work like containers to isolate running processes; and ports and packages, which are two distinct methods that FreeBSD uses to distribute applications.
 
 ### FreeBSD vs Linux
-This section will mostly be an interactive venn diagram that will show the similarities and differences between FreeBSD and Linux. With their similarities, some people may think that FreeBSD is a Linux distro, when it is not. The venn diagram will have clickable nodes inside each circle and in the middle as well. The node will have text that succinctly describes the similarity or difference. For instance, a node may be called “Unix-based systems”  and be put in the middle. When the user clicks one of these nodes, a pop-up modal will appear to give more details about the specific similarity or difference the node is pertaining to. 
+This section will feature an interactive dual-terminal simulator that demonstrates the architectural differences and similarities between FreeBSD and Linux in real time. With their similarities in both environments as both are Unix-based systems,, some people may think that FreeBSD is a Linux distro, when it is actually an entirely independent operating system. To clear up this misconception, the simulator provides a shared command input bar positioned above parallel terminal windows. When a user runs a command from a prepared list of available commands, both environments will instantly generate side-by-side system logs and update virtual CPU meters. This allows visitors to actively compare and experience how both systems handle processing loads.
 
 ### Where Can We Find FreeBSD Today?
 This section will discuss where FreeBSD is often used today. More than just providing a general answer, such as how FreeBSD is well-suited for server environments, we can provide a specific, real-life example when applicable. For example, in terms of server environments, we can cite Netflix as an example that uses FreeBSD for their content delivery network (FreeBSD Foundation, 2024).
+
+## Tech Stack Plan
+The table below outlines the project components, core technologies and their corresponding versions, and their applications that we selected for our team’s virtual exhibit.
 
 | **Project Component** | **Technology** | **Version**                                    | **Application & Justification**                                                                                                                                          |
 | :-------------------- | :------------- | :--------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,11 +30,16 @@ This section will discuss where FreeBSD is often used today. More than just prov
 
 Following the Tech Stack Plan, our Proposed Interactive Element is an Architectural Venn Diagram comparing FreeBSD with Linux. The planned User Experience (UX) and Technical Implementation of the interactive element is as follows:
 
-- Rendering: The interactive venn diagram is rendered directly in the MDX page. It is built as a separate component and is imported in the .mdx file of the virtual exhibit.
-- State Management: The venn diagram will feature clear labels and clickable items within the individual circles featuring the unique traits of FreeBSD and Linux while the intersection contains the shared traits of the two systems. When items in either the circles or the intersection are clicked, a modal/pop-up window including a detailed explanation on the specific trait will appear. React will be used for state management to dynamically manage the modal and the visibility of contents when a clickable item is triggered by the user or when it is closed.
-- Styling: Tailwind CSS will be utilized for styling of the venn diagram, positioning, animations and other design elements that will be utilized in the development of the overall virtual exhibit.
+### Rendering
+The interactive terminal simulator is rendered directly in the MDX page. It is built as a separate component file and is imported directly into the .mdx file of the virtual exhibit.
+### State Management
+The dashboard will feature a global command input bar at the top, positioned above two parallel terminal cards that represent the FreeBSD and Linux environments side-by-side. React will be used for the state management to keep track of user input, dynamic rendering of text logs in the terminal displays,  and updating the animations of the bars and gauges,
+- Each terminal area includes its own active progress bar and a visual CPU usage gauge widget that automatically runs an animation simulating the CPU response and progress as a command is being run.
+- Output logs are dynamically displayed on each terminal when a user inputs any of the provided commands. Some common Linux and FreeBSD (i.e.echo, cd, lds, etc.) will also be made available, given some restrictions, to reward users who may want to explore a bit more. Additionally, output logs will include short descriptions at the end describing to the user what the command did,  how it might translate in a real-world application, and how the command being run differs when run on FreeBSD vs Linux.
+### Styling 
+Tailwind CSS will be utilized for styling of the overall interactive terminal, positioning, animations and other design elements that will be utilized in the development of the overall virtual exhibit.
 
-### Tentative Style Guide Snapshot
+## Tentative Style Guide Snapshot
 
 ![1](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/1.png)
 ![2](https://raw.githubusercontent.com/notgian/csarch2-freebsd/refs/heads/main/imgs/2.png)
